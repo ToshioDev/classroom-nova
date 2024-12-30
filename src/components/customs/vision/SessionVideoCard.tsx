@@ -25,7 +25,7 @@ export function SessionVideoCard({
 
   return (
     <Card className={cn(
-      "overflow-hidden group cursor-pointer transition-all hover:ring-2 hover:ring-primary",
+      "overflow-hidden group cursor-pointer transition-all outline-none outline-offset-1 hover:outline-borderNav",
       isWatched && "ring-1 ring-primary/30"
     )}>
       <CardContent className="p-0 relative">

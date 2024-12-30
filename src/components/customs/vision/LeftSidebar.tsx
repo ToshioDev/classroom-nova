@@ -42,21 +42,21 @@ const LeftSidebar: React.FC<LeftSidebarProps> = ({ activeCategory, setActiveCate
   };
 
   return (
-    <div className="w-64 bg-gray-100 p-4 shadow-md">
+    <div className="w-64 h-[calc(100vh-80px)] border-r border-gray-200 px-2 py-4">
       <div className="mb-4 flex items-center">
         <Box className="w-8 h-8 text-primary" />
         <h2 className="text-lg font-bold ml-2">Categorías</h2>
       </div>
-      <div className="border border-gray-300 rounded-md">
+      <div className="space-y-2">
         {categories.map(category => (
-          <div key={category.name} className="border-b border-gray-300 mb-1">
+          <div key={category.name}>
             <button
-              className={`w-full p-4 focus:outline-none flex items-center justify-start ${
-                activeCategory === category.name ? 'bg-gray-300 text-black' : 'bg-black text-white'
+              className={`w-full p-4 focus:outline-none flex items-center justify-start rounded-lg text-white ${
+                activeCategory === category.name ? 'bg-black/80' : 'bg-black'
               }`}
               onClick={() => handleCategoryClick(category.name)}
             >
-              <Icon name={category.icon} color={activeCategory === category.name ? 'black' : 'white'} size={24} />
+              <Icon name={category.icon} color={"white"} size={24} />
               <span className="ml-2">{category.name}</span>
             </button>
           </div>
