@@ -17,7 +17,7 @@ const CourseOnSell: React.FC<CourseOnSellProps> = ({ courses }) => {
   return (
     <div> 
       {courses.length === 0 ? (
-        <div className="flex flex-col h-screen flex items-center mt-32">
+        <div className="flex flex-col h-screen items-center mt-32">
           <Box className="w-24 h-24 text-primary mb-4" />
           <span className="text-3xl font-bold text-center">Pronto agregaremos cursos en esta categoría.</span>
         </div>
