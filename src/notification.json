@@ -1,0 +1,22 @@
+{
+    "notifications": [
+        {
+            "id": "1",
+            "message": "You have a new assignment due tomorrow.",
+            "timestamp": "2023-10-01T10:00:00Z",
+            "read": false
+        },
+        {
+            "id": "2",
+            "message": "Your payment has been processed successfully.",
+            "timestamp": "2023-10-02T12:00:00Z",
+            "read": true
+        },
+        {
+            "id": "3",
+            "message": "New course materials are available.",
+            "timestamp": "2023-10-03T14:00:00Z",
+            "read": false
+        }
+    ]
+}
